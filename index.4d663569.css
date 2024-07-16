@@ -143,11 +143,43 @@ img.socialIcon {
   }
 }
 
-.grid {
+.education-grid {
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  margin: 20px auto;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
   display: grid;
+}
+
+.education-grid-item {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px 16px;
+  display: flex;
+}
+
+.education-grid-item img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.education-grid-item h4 {
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+}
+
+.education-grid-item p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
